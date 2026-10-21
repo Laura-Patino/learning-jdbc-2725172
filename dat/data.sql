@@ -1,3 +1,4 @@
+--caricamento delle tabelle, su terminale: dat/load-db.sh
 DROP SCHEMA IF EXISTS wisdom cascade;
 CREATE SCHEMA wisdom;
 CREATE TABLE wisdom.services (
