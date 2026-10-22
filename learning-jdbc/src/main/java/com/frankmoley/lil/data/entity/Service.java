@@ -7,6 +7,7 @@ public class Service {
   private UUID serviceId;
   private String name;
   private BigDecimal price;
+  
   public UUID getServiceId() {
     return serviceId;
   }
