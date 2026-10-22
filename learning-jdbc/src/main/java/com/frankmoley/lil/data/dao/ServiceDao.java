@@ -43,7 +43,7 @@ public class ServiceDao implements Dao<Service, UUID>{
       }
       DatabaseUtils.handleSqlException("ServiceDao.create", e, LOGGER);
     }
-    Optional<Service> service = this.getOne(serviceId);
+    Optional<Service> service = this.getOne(serviceId); //se è avvenuto un errore a livello di create o get, sarà vuoto
     if(!service.isPresent()){
       return null;
     }
@@ -106,7 +106,7 @@ public class ServiceDao implements Dao<Service, UUID>{
       }
       DatabaseUtils.handleSqlException("ServiceDao.update", e, LOGGER);
     }
-    return this.getOne(entity.getServiceId()).get();
+    return this.getOne(entity.getServiceId()).get(); //se Optional<Service> non è vuoto, get() ottiene il valore
   }
 
   private List<Service> processResultSet(ResultSet rs) throws SQLException{
