@@ -6,7 +6,8 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 public class DatabaseUtils {
-  private static final String URL = "jdbc:postgresql://localhost:5432/localdb";
+  //correzione nome del host: non è localhost, ma db 
+  private static final String URL = "jdbc:postgresql://db:5432/localdb";
   private static final String USERNAME = "localdbuser";
   private static final String PASSWORD = "P@ssw0rd!";
   private static final Logger LOGGER = Logger.getLogger(DatabaseUtils.class.getName());
