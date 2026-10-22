@@ -59,7 +59,7 @@ public class ServiceDao implements Dao<Service, UUID>{
       connection.setAutoCommit(false);
       PreparedStatement statement = connection.prepareStatement(DELETE);
       statement.setObject(1, id);
-      statement.executeUpdate();
+      statement.executeUpdate(); //chiamata diversa, non execute()
       connection.commit();
       statement.close();
     } catch (SQLException e) {
