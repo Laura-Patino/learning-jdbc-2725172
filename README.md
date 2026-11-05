@@ -1,5 +1,4 @@
 # Learning JDBC
-Approfondimento personale. 
 Repository preso dal corso di Linkedin Learing `Learning JDBC`. The full course is available from [LinkedIn Learning][lil-course-url]. 
 
 ![lil-thumbnail-url]
