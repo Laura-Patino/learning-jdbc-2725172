@@ -12,6 +12,7 @@ import com.frankmoley.lil.data.entity.Service;
  */
 public class App {
     public static void main(String[] args) {
+        //-----TABELLA SERVICES wisdom.services
         ServiceDao serviceDao = new ServiceDao();
 
         List<Service> services = serviceDao.getAll();
@@ -36,4 +37,7 @@ public class App {
         System.out.println("\n*** DELETE ***\n");
         
     }
+
+    //----TABELLA CUSTOMERS wisdom.customers
+    
 }
